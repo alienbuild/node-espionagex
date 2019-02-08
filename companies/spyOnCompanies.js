@@ -31,8 +31,8 @@ const spyOnCompanies = () => {
     				else resolve(res);
     			});
     		});
-    	});
-
+    	})
+        .catch( err => console.log(err));
     });
 
 };
