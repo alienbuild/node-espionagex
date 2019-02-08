@@ -26,7 +26,7 @@ const spyOnCompanies = () => {
 
     		// Write results to file
     		return new Promise((resolve,reject) => {
-    			fs.writeFile(companyName + '.txt', JSON.stringify(res), function(err) {
+    			fs.writeFile('./companies/results/' + companyName + '.txt', JSON.stringify(res), function(err) {
     				if (err) reject(err);
     				else resolve(res);
     			});
