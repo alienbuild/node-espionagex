@@ -5,7 +5,7 @@ const spyOnCompanies = () => {
 
 	// Define an Array of Symbols
     const compFile = fs.readFileSync("./companylist.txt", "utf-8"); // Company list
-    const comps = compFile.split('\r\n');
+    const comps = compFile.split('\n');
 
     // Send message to console
     console.log('** Spying on companies **');
