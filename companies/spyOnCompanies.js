@@ -49,8 +49,7 @@ const spyOnCompanies = () => {
 
 
 			return new Promise((resolve,reject) => {
-console.log(res);
-
+				
 
 				fs.writeFile(__dirname + `/results/${currentYear}/${currentMonth}/${currentDay}/${companyName}.json`, JSON.stringify(res), function(err) {
 					if (err) reject(err);
